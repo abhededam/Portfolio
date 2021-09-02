@@ -71,10 +71,19 @@ h3 {
     font-size: .7rem;
 }
 
-p {
+p, li{
     color: var(--quinary);
     font-family: var(--paragraph);
     font-size: .7rem;
+}
+
+.btn{
+    border-color: var(--primary);
+    border-radius: 1rem;
+    color: var(--primary);
+    font-size: .7rem;
+    text-transform: capitalize;
+    letter-spacing: .5rem;
 }
 
 
@@ -91,5 +100,25 @@ p {
     display: block;
 }
 
+.proHead h1 {
+    color: var(--quinary);
+    font-family: var(--accent);
+    text-transform: none;
+    letter-spacing: 0rem;
+    font-size: 4rem;
+    text-align: center;
+}
 
+.proDis {
+    display: none;
+    text-align: center;
+}
+
+.proHead:hover + .proDis {
+    display: block;
+}
+
+.project img {
+    width: 100%;
+}
 
