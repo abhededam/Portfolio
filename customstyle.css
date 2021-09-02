@@ -1,34 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+@media screen and (max-width: 375px) {
+    
+    .intro {
+        margin-top: 20vh;
+        margin-bottom: 25vh;
+    }
+
+    #intro {  
+        font-family: var(--accent);  
+        font-size: 2.4rem;
+        font-weight: bold;
+        width: 100%;
+    }
+
+}
 
 :root {
     --primary: #d64d5f;
-    --secondary: #363232;
-    --tertiary: #e4e4e4;
+    --secondary: #aaaaaa;
+    --tertiary: #F2F2F2;
     --quaternary: #a53443;
     --quinary: #1e1e1e;
 
-    --heading: 'Playfair Display', serif;
-    --paragraph: 'Roboto', sans-serif;
+    --accent: 'Playfair Display', serif;
+    --heading: 'Roboto', sans-serif;
+    --paragraph: 'Open Sans', sans-serif;
+
 }
 
 body {
     background-color: var(--tertiary); 
     font-family: var(--paragraph);
-}
-
-
-.page-start.navbar-dark .navbar-toggler {
-    border: transparent;
-}
-
-.page-start.navbar a{
-    color: var(--quaternary);
-
-}
-
-.page-start.navbar {
-    background-color: var(--secondary);
-    box-shadow: 0px -2px 5px 5px rgb(0 0 0 / 30%);
 }
 
 
@@ -38,178 +41,55 @@ body {
 }
 
 #intro {  
-    font-family: var(--heading);  
+    font-family: var(--accent);  
     font-size: 4rem;
     font-weight: bold;
     width: 100%;
     color: var(--primary);
 }
 
-.cvcard {
-    margin-bottom: 30vh;
-    display: table;
-    width: 100%;
-}
 h1 {
     color: var(--secondary);
     font-family: var(--heading);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: .7rem;
+    text-align: center;
 }
 
-.cvcard .card {
-    background-color: transparent;
-    background: linear-gradient(160deg, var(--secondary) 0%, rgba(34,193,195,0) 80%);
-    border: transparent;
-    padding: .375rem .75rem;
-    margin-bottom: 5vh;
-    height: 100%;
-    width: 30vw;
-}
-.jobs, .study{
-    display: table-cell;
-    margin-right: auto;
-}
-.cvcard .btn {
-    text-align: start;
+h2 {
     color: var(--quinary);
-    padding: 0;
-    border: 0.5px;
-    border-radius: .1rem;
-}
-
-.cvcard .btn-check:focus+.btn, .cvcard .btn:focus {
-    outline: 0;
-    box-shadow: none;
-}
-
-.cvcard p {
-    margin: auto;
-    color: var(--quinary);
-}
-
-.about{
-    padding-bottom: 15vh;
-}
-
-.about p {
-    color: var(--quinary);
-}
-.portrait img {
-    width: 100%;
-    align-self: center;
-}
-
-.project {
-    margin-top: 5vh;
-}
-.project .card {
-    background: linear-gradient(160deg, var(--secondary) 0%, rgba(34,193,195,0) 80%);
-}
-
-.card{
-    border-radius: .75rem;
-}
-
-.project img {
-    border-radius: .5rem ;
-}
-
-.project * {
-    text-align: left;
-    color: var(--quinary);
-    box-shadow: none!important;
-    border: none;
-}
-.project .col {
-    margin: auto 0;
-}
-.project h1 {
     font-family: var(--heading);
-}
-.project a.calltoaction {
-    margin-top: 1vh;
-    background-color: #e03ab7;
-}
-.project .gallery img{
-    width: 20vw;
-    margin: auto 0;
-}
-.project a img {
-    max-width: 250px;
-    display: block;
-    margin: auto;
-
-}
-#stallasio{
-    background: linear-gradient(160deg, #e03ab7 0%, rgba(34,193,195,0) 80%);
+    font-size: 1rem;
 }
 
-#hub31 {
-    background: linear-gradient(160deg, #bd0926 0%, rgba(34,193,195,0) 80%);
+h3 {
+    color: var(--quinary);
+    font-family: var(--paragraph);
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: .7rem;
 }
 
-#nintendo {
-    background: linear-gradient(160deg, #127eff 0%, rgba(34,193,195,0) 80%);
-}
-@media screen and (max-width: 375px) {
-    
-    .intro {
-        margin-top: 20vh;
-        margin-bottom: 25vh;
-    }
-
-    #intro {  
-        font-family: var(--heading);  
-        font-size: 2.4rem;
-        font-weight: bold;
-        width: 100%;
-    }
-
-    .cvcard {
-        margin-bottom: 30vh;
-        display: block;
-        justify-content: center;
-    }
-    .jobs, .study {
-        display: block;
-    }
-
-    .cvcard .card {
-        background-color: transparent;
-        background: linear-gradient(160deg, var(--secondary) 0%, rgba(34,193,195,0) 80%);
-        border: transparent;
-        padding: .375rem .75rem;
-        margin-bottom: 5vh;
-        width: auto;
-    }
-
-    .about .col {
-        flex: 1 0 100%;
-    }
-
-    .about img {
-        display: none;
-    }
-
-    .project .col {
-        flex: 1 0 100%;
-    }
-
-    .project img {
-        width: 75vw;
-    }
-    .project .col-4 {
-        flex: 1 0 auto;
-    }
+p {
+    color: var(--quinary);
+    font-family: var(--paragraph);
+    font-size: .7rem;
 }
 
-.page-end.navbar.navbar img {
-    width: 30px;
+
+.cvAbout {
+    display: none;
+    align-content: center;
 }
 
-.page-end.navbar > .container-fluid {
+.cvInfo:hover {
+    margin: 0;
+}
+
+.cvInfo:hover + .cvAbout{
     display: block;
 }
 
-.page-end.navbar {
-    background-color: var(--secondary);
-}
+
+
