@@ -77,6 +77,13 @@ p, li{
     font-size: .7rem;
 }
 
+img {
+    width: 100%;
+}
+
+.container {
+    margin-top: 5vh;
+}
 .btn{
     border-color: var(--primary);
     border-radius: 1rem;
@@ -118,7 +125,9 @@ p, li{
     display: block;
 }
 
-.project img {
-    width: 100%;
-}
 
+
+.footer a, .footer h1{
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
