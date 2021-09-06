@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display&family=Roboto:ital,wght@0,400;1,700&display=swap');
 
-@media screen and (max-width: 375px) {
-    
-    .intro {
-        margin-top: 5vh;
-        margin-bottom: 10vh;
-    }
 
-    #intro {  
-        font-family: var(--accent);  
-        font-size: 2.4rem;
-        font-weight: bold;
-        width: 100%;
-    }
-
-}
 
 :root {
     --primary: #d64d5f;
@@ -112,11 +98,11 @@ hr {
     align-content: center;
 }
 
-.cvInfo:hover {
+.cvSect:hover .cvInfo {
     margin: 0;
 }
 
-.cvInfo:hover + .cvAbout{
+.cvSect:hover .cvAbout {
     display: block;
 }
 
@@ -128,7 +114,7 @@ marquee h2, .marquee h2 {
 
 .marquee {
     overflow: hidden;
-  }
+}
 
 .proHead h1 {
     color: var(--quinary);
@@ -147,15 +133,18 @@ marquee h2, .marquee h2 {
 .proHead:hover + .proDis {
     display: block;
 }
+
 .col-6 img {
     width: 15vw;
     margin: 0 auto;
     display: block;
 }
+
 .anderepro .col-2 {
     position: relative;
     text-align: center;
 }
+
 .anderepro h3 {
     position: absolute;
     top: 50%;
@@ -181,9 +170,60 @@ marquee h2, .marquee h2 {
 }
 
 .footer{
-    margin: 10vh 0 3vh;
+    margin: 10vh auto 3vh;
 }
+
 .footer a, .footer h1{
     text-decoration: none;
     letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 375px) {
+    
+    .intro {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    #intro {  
+        font-family: var(--accent);  
+        font-size: 2.4rem;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .cvAbout {
+        width: 100%;
+    }
+
+    .project .col-6 {
+        width: 100%;
+    }
+
+    .project .col-2, .col-6 img {
+        width: 33.333333%;
+    }
+
+    .proHead h1 {
+        font-size: 2.4rem;
+    }
+
+    
+    .anderepro .col-2 {
+        width: 50%;
+    }
+
+    .about .col-3 {
+        width: 100%;
+    }
+
+    .about img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .footer .col-2 {
+        width: 100%;
+    }
 }
