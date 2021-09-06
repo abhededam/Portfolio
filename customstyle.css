@@ -3,8 +3,8 @@
 @media screen and (max-width: 375px) {
     
     .intro {
-        margin-top: 20vh;
-        margin-bottom: 25vh;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
     }
 
     #intro {  
@@ -36,8 +36,8 @@ body {
 
 
 .intro {
-    margin-top: 15vh;
-    margin-bottom: 30vh;
+    margin-top: 7vh;
+    margin-bottom: 12vh;
 }
 
 #intro {  
@@ -81,9 +81,18 @@ img {
     width: 100%;
 }
 
+hr {
+    margin: 0;
+}
+
 .container {
     margin-top: 5vh;
 }
+
+.section {
+    margin-top: 16vh;
+}
+
 .btn{
     border-color: var(--primary);
     border-radius: 1rem;
@@ -91,8 +100,12 @@ img {
     font-size: .7rem;
     text-transform: capitalize;
     letter-spacing: .5rem;
+    margin: 1vh 0 2vh;
 }
 
+#titel{
+    margin-top: 1vh;
+}
 
 .cvAbout {
     display: none;
@@ -106,6 +119,16 @@ img {
 .cvInfo:hover + .cvAbout{
     display: block;
 }
+
+marquee h2, .marquee h2 {
+    display: initial;
+    padding-right: 1vw;
+    font-style: italic;
+}
+
+.marquee {
+    overflow: hidden;
+  }
 
 .proHead h1 {
     color: var(--quinary);
@@ -124,9 +147,42 @@ img {
 .proHead:hover + .proDis {
     display: block;
 }
+.col-6 img {
+    width: 15vw;
+    margin: 0 auto;
+    display: block;
+}
+.anderepro .col-2 {
+    position: relative;
+    text-align: center;
+}
+.anderepro h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
 
+.anderepro .col-2:hover img{
+    opacity: 10%;
+}
 
+.anderepro .col-2:hover h3{
+    display: block;
+}
 
+.about img {
+    margin: 1vw 0;
+}
+
+.about .col {
+    margin: auto 0;
+}
+
+.footer{
+    margin: 10vh 0 3vh;
+}
 .footer a, .footer h1{
     text-decoration: none;
     letter-spacing: .1rem;

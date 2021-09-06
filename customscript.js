@@ -11,5 +11,12 @@ $(document).ready(function() {
             opacity: 1
         }, 100);
     });
+    $('.marquee').marquee({
+        pauseOnHover: true,
+        duration: 10000,
+        gap: 0,
+      });
+      
 });
+
 
