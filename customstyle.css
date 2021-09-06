@@ -34,6 +34,9 @@ body {
     color: var(--primary);
 }
 
+a {
+    text-decoration: none;
+}
 h1 {
     color: var(--secondary);
     font-family: var(--heading);
@@ -41,6 +44,7 @@ h1 {
     letter-spacing: 1rem;
     font-size: .7rem;
     text-align: center;
+    text-decoration: none;
 }
 
 h2 {
@@ -91,6 +95,7 @@ hr {
 
 #titel{
     margin-top: 1vh;
+    text-decoration: none;
 }
 
 .cvAbout {
@@ -98,6 +103,9 @@ hr {
     align-content: center;
 }
 
+.cvSect {
+    margin: 2vh 0;
+}
 .cvSect:hover .cvInfo {
     margin: 0;
 }
@@ -224,6 +232,10 @@ marquee h2, .marquee h2 {
     }
 
     .footer .col-2 {
+        width: 100%;
+    }
+    
+    .impressum .col-2 {
         width: 100%;
     }
 }
