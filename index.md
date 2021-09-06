@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="de">
     <head>
         <!-- Required meta tags -->
