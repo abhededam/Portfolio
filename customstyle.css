@@ -37,6 +37,7 @@ body {
 a {
     text-decoration: none;
 }
+
 h1 {
     color: var(--secondary);
     font-family: var(--heading);
@@ -64,7 +65,7 @@ h3 {
 p, li{
     color: var(--quinary);
     font-family: var(--paragraph);
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 img {
@@ -98,16 +99,24 @@ hr {
     text-decoration: none;
 }
 
+.cvInfo {
+    margin: 1vh 0;
+}
 .cvAbout {
     display: none;
     align-content: center;
+    margin: auto 0;
+}
+
+.cvAbout p {
+    margin: 1vh 0;
 }
 
 .cvSect {
     margin: 2vh 0;
 }
 .cvSect:hover .cvInfo {
-    margin: 0;
+    margin: auto 0;
 }
 
 .cvSect:hover .cvAbout {
@@ -187,6 +196,10 @@ marquee h2, .marquee h2 {
 }
 
 @media screen and (max-width: 375px) {
+
+    p {
+        font-size: .7rem;
+    }
     
     .intro {
         margin-top: 5vh;
@@ -225,9 +238,10 @@ marquee h2, .marquee h2 {
         width: 100%;
     }
 
+
     .about img {
         width: 50%;
-        margin: 0 auto;
+        margin: 1vh auto;
         display: block;
     }
 
