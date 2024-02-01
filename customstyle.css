@@ -186,6 +186,10 @@ marquee h2, .marquee h2 {
     margin: auto 0;
 }
 
+.platzhalter {
+    height:35vh;
+}
+
 .footer{
     margin: 10vh auto 3vh;
 }

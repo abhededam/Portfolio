@@ -1,4 +1,4 @@
-var content = 'Teamspielerin mit Herz für innovative Technologie um Nutzererlebnisse zu revolutionieren.';
+var content = 'This Website is under construction...';
 
 var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
