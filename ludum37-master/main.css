@@ -1,0 +1,35 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    padding: 1em;
+    background-color: #C9D4E4;
+    text-align: center;
+    font-family: "VT323", monospace;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+    font-family: "Source Sans Pro", monospace;
+    text-rendering: optimizeSpeed;
+}
+
+p {
+    color: #333;
+    background-color: #FFF;
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: .3em;
+    border: 1px solid #666;
+    width: 1000px;
+}
+
+#container {
+    width: 1280px;
+    height: 720px;
+    margin: auto auto;
+    border-radius: .3em;
+    border: 1px solid black;
+}
